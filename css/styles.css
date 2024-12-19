@@ -6,14 +6,15 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    font-size: 2vw;
 }
 
 .logo {
     position: fixed;
-    top: 2vh;
-    left: 2vw;
-    width: 5vw;
-    height: 5vw;
+    top: 2rem;
+    left: 2rem;
+    width: 10vw; 
+    height: 10vw;
 }
 
 .logo img {
@@ -24,38 +25,38 @@ body {
     margin: 0;
     padding: 0;
     justify-content: center;
-    font-size: 10vw;
+    font-size: 8vw;
 }
 
 .buttonsContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2vw;
-    width: 50%;  
-    margin-top: 10vh;
+    gap: 2rem;
+    width: 60%;  
+    margin-top: 10rem;
 }
 
 #topicsButton {
     background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
     color: rgba(255, 255, 255, 0.9);
     border: none;
-    padding: 2vw;
+    padding: 1.5rem;
     text-align: center;
     cursor: pointer;
-    border-radius: 5vw;
-    font-size: 2vw;
+    border-radius: 5rem;
+    font-size: 2vw; 
     position: relative;
     overflow: hidden;
     background-size: 600%;
-    box-shadow: 0 0 1vw rgba(3, 169, 244, 0.7);
+    box-shadow: 0 0 1rem rgba(3, 169, 244, 0.7);
     animation: animate 20s linear infinite;
 }
 
 #topicsButton:hover {
     animation: animate 5s linear infinite;
     transition: background 1s ease;
-    box-shadow: 0 0 3vw rgba(3, 169, 244, 1), 0 0 6vw rgba(244, 65, 165, 1);
+    box-shadow: 0 0 3rem rgba(3, 169, 244, 1), 0 0 6rem rgba(244, 65, 165, 1);
 }
 
 @keyframes animate {
@@ -64,5 +65,37 @@ body {
     }
     100% {
         background-position: 400%;
+    }
+}
+
+@media (min-width: 600px) {
+    body {
+        font-size: 1.2rem;
+    }
+    #title {
+        font-size: 5rem; 
+    }
+    #topicsButton {
+        font-size: 1.5rem; 
+        padding: 2rem;
+    }
+    .buttonsContainer {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 1rem; 
+    }
+    #title {
+        font-size: 5rem;
+    }
+    #topicsButton {
+        font-size: 1.2rem; 
+        padding: 2.5rem;
+    }
+    .buttonsContainer {
+        width: 40%;
     }
 }
