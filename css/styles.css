@@ -26,3 +26,43 @@ body {
     justify-content: center;
     font-size: 10vw;
 }
+
+.buttonsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw;
+    width: 50%;  
+    margin-top: 10vh;
+}
+
+#topicsButton {
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    color: rgba(255, 255, 255, 0.9);
+    border: none;
+    padding: 2vw;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5vw;
+    font-size: 2vw;
+    position: relative;
+    overflow: hidden;
+    background-size: 600%;
+    box-shadow: 0 0 1vw rgba(3, 169, 244, 0.7);
+    animation: animate 20s linear infinite;
+}
+
+#topicsButton:hover {
+    animation: animate 5s linear infinite;
+    transition: background 1s ease;
+    box-shadow: 0 0 3vw rgba(3, 169, 244, 1), 0 0 6vw rgba(244, 65, 165, 1);
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
