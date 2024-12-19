@@ -1,0 +1,28 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    position: fixed;
+    top: 2vh;
+    left: 2vw;
+    width: 5vw;
+    height: 5vw;
+}
+
+.logo img {
+    border-radius: 50%;
+}
+
+#title {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    font-size: 10vw;
+}
