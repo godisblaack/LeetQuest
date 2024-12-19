@@ -3,7 +3,7 @@ window.onload = function() {
     
     var imgElement = document.createElement('img');
     
-    imgElement.src = '../images/logo/logo.png';
+    imgElement.src = 'https://raw.githubusercontent.com/godisblaack/Leetquest/master/images/logo/logo.png';
     
     imgElement.width = 50;
     imgElement.height = 50; 
